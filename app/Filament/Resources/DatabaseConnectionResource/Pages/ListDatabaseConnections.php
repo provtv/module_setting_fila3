@@ -6,7 +6,7 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
+use Filament\Tables\Columns\BadgeColumn;
 use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -15,12 +15,35 @@ class ListDatabaseConnections extends XotBaseListRecords
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
-    public function getTableColumns(): array
+    public function getListTableColumns(): array
     {
         return [
-            TextColumn::make('name')->searchable()->sortable(),
-            TextColumn::make('driver')->searchable()->sortable(),
-            TextColumn::make('database')->searchable()->sortable(),
+            'name' => TextColumn::make('name')
+                ->searchable()
+                ->sortable(),
+
+            'driver' => TextColumn::make('driver')
+                ->searchable(),
+
+            'host' => TextColumn::make('host')
+                ->searchable(),
+
+            'port' => TextColumn::make('port')
+                ->numeric()
+                ->sortable(),
+
+            'database' => TextColumn::make('database')
+                ->searchable(),
+
+            'username' => TextColumn::make('username')
+                ->searchable(),
+
+            'status' => BadgeColumn::make('status')
+                ->colors([
+                    'danger' => 'inactive',
+                    'warning' => 'testing',
+                    'success' => 'active',
+                ]),
         ];
     }
 
@@ -33,7 +56,6 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function getTableActions(): array
     {
         return [
-            // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
         ];
     }
@@ -41,18 +63,7 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function getTableBulkActions(): array
     {
         return [
-            // Tables\Actions\BulkActionGroup::make([
             Tables\Actions\DeleteBulkAction::make(),
-            // ]),
         ];
-    }
-
-    public function table(Table $table): Table
-    {
-        return $table
-            ->columns($this->getTableColumns())
-            ->filters($this->getTableFilters())
-            ->actions($this->getTableActions())
-            ->bulkActions($this->getTableBulkActions());
     }
 }
