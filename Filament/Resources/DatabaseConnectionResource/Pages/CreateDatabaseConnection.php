@@ -19,8 +19,8 @@ class CreateDatabaseConnection extends CreateRecord
     protected function afterCreate(): void
     {
         $connection = $this->record;
-        
-        if ($connection->status === 'active') {
+
+        if ('active' === $connection->status) {
             $connection->testConnection();
         }
     }

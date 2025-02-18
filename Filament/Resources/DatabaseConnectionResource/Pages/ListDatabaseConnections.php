@@ -16,23 +16,23 @@ class ListDatabaseConnections extends ListRecords
         return [
             'name' => Tables\Columns\TextColumn::make('name')
                 ->searchable(),
-            
+
             'driver' => Tables\Columns\TextColumn::make('driver')
                 ->searchable(),
-            
+
             'host' => Tables\Columns\TextColumn::make('host')
                 ->searchable(),
-            
+
             'database' => Tables\Columns\TextColumn::make('database')
                 ->searchable(),
-            
+
             'status' => Tables\Columns\BadgeColumn::make('status')
                 ->colors([
                     'danger' => 'inactive',
                     'warning' => 'testing',
                     'success' => 'active',
                 ]),
-            
+
             'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
@@ -49,7 +49,7 @@ class ListDatabaseConnections extends ListRecords
                     'sqlite' => 'SQLite',
                     'sqlsrv' => 'SQL Server',
                 ]),
-            
+
             Tables\Filters\SelectFilter::make('status')
                 ->options([
                     'active' => 'Active',

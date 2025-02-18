@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Tables;
-use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
+use Filament\Tables\Columns\TextColumn;
 use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;

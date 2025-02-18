@@ -25,7 +25,7 @@ class EditDatabaseConnection extends EditRecord
 
     protected function afterSave(): void
     {
-        if ($this->record->status === 'active') {
+        if ('active' === $this->record->status) {
             $this->record->testConnection();
         }
     }

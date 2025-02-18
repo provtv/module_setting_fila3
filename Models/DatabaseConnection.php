@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Setting\Models;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\DB;
 
 class DatabaseConnection extends Model
 {
@@ -50,7 +50,7 @@ class DatabaseConnection extends Model
                 'engine' => $this->engine,
             ];
 
-            if (!empty($this->options)) {
+            if (! empty($this->options)) {
                 $config = array_merge($config, $this->options);
             }
 
@@ -60,6 +60,7 @@ class DatabaseConnection extends Model
             return true;
         } catch (\Exception $e) {
             report($e);
+
             return false;
         }
     }
