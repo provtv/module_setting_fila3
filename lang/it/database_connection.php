@@ -8,8 +8,8 @@ return [
             'name' => 'Settings',
         ],
         'sort' => 26,
-        'label' => 'database connection.navigation',
-        'icon' => 'database connection.navigation',
+        'label' => 'database connection',
+        'icon' => 'database connection',
     ],
     'fields' => [
         'name' => 'Nome',
