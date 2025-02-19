@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Tables;
+use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
@@ -18,9 +19,32 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function getListTableColumns(): array
     {
         return [
-            TextColumn::make('name')->searchable()->sortable(),
-            TextColumn::make('driver')->searchable()->sortable(),
-            TextColumn::make('database')->searchable()->sortable(),
+            'name' => TextColumn::make('name')
+                ->searchable()
+                ->sortable(),
+
+            'driver' => TextColumn::make('driver')
+                ->searchable(),
+
+            'host' => TextColumn::make('host')
+                ->searchable(),
+
+            'port' => TextColumn::make('port')
+                ->numeric()
+                ->sortable(),
+
+            'database' => TextColumn::make('database')
+                ->searchable(),
+
+            'username' => TextColumn::make('username')
+                ->searchable(),
+
+            'status' => BadgeColumn::make('status')
+                ->colors([
+                    'danger' => 'inactive',
+                    'warning' => 'testing',
+                    'success' => 'active',
+                ]),
         ];
     }
 
@@ -33,7 +57,6 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function getTableActions(): array
     {
         return [
-            // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
         ];
     }
@@ -41,9 +64,7 @@ class ListDatabaseConnections extends XotBaseListRecords
     public function getTableBulkActions(): array
     {
         return [
-            // Tables\Actions\BulkActionGroup::make([
             Tables\Actions\DeleteBulkAction::make(),
-            // ]),
         ];
     }
 
