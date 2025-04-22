@@ -12,6 +12,9 @@ class CreateDatabaseConnection extends CreateRecord
     protected static string $resource = DatabaseConnectionResource::class;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
 
     protected function getRedirectUrl(): string
     {
@@ -28,6 +31,9 @@ class CreateDatabaseConnection extends CreateRecord
     }
 =======
 >>>>>>> origin/dev
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
 }

@@ -7,6 +7,9 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -84,8 +87,11 @@ class DatabaseConnection extends Model
             return false;
         }
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
@@ -130,8 +136,12 @@ class DatabaseConnection extends Model
 
         return array_values($rows);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/dev
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> origin/dev
+>>>>>>> 6d0eff2 (.)
     }
 }

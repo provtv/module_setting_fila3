@@ -6,6 +6,9 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
@@ -47,8 +50,11 @@ class ListDatabaseConnections extends ListRecords
                 ->dateTime()
                 ->sortable(),
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
 use Filament\Tables;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
@@ -67,9 +73,13 @@ class ListDatabaseConnections extends XotBaseListRecords
             TextColumn::make('driver')->searchable()->sortable(),
             TextColumn::make('database')->searchable()->sortable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/dev
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> origin/dev
+>>>>>>> 6d0eff2 (.)
         ];
     }
 
@@ -78,6 +88,9 @@ class ListDatabaseConnections extends XotBaseListRecords
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
             SelectFilter::make('driver')
                 ->options([
                     'mysql' => 'MySQL',
@@ -94,8 +107,11 @@ class ListDatabaseConnections extends XotBaseListRecords
                 ]),
 =======
 >>>>>>> origin/dev
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
         ];
     }
 
@@ -104,6 +120,9 @@ class ListDatabaseConnections extends XotBaseListRecords
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
             EditAction::make(),
             DeleteAction::make(),
             Action::make('test')
@@ -114,10 +133,13 @@ class ListDatabaseConnections extends XotBaseListRecords
             // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
 >>>>>>> origin/dev
+<<<<<<< HEAD
 =======
             // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
         ];
     }
 
@@ -126,6 +148,9 @@ class ListDatabaseConnections extends XotBaseListRecords
         return [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6d0eff2 (.)
             DeleteBulkAction::make(),
         ];
     }
@@ -136,8 +161,11 @@ class ListDatabaseConnections extends XotBaseListRecords
             CreateAction::make(),
         ];
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
             // Tables\Actions\BulkActionGroup::make([
             Tables\Actions\DeleteBulkAction::make(),
             // ]),
@@ -152,8 +180,12 @@ class ListDatabaseConnections extends XotBaseListRecords
             ->actions($this->getTableActions())
             ->bulkActions($this->getTableBulkActions());
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/dev
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> origin/dev
+>>>>>>> 6d0eff2 (.)
     }
 }
