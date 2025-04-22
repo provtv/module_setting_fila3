@@ -7,8 +7,11 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
@@ -49,6 +52,7 @@ class ListDatabaseConnections extends ListRecords
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -80,6 +84,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
         ];
     }
 
@@ -89,8 +95,11 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
             SelectFilter::make('driver')
                 ->options([
                     'mysql' => 'MySQL',
@@ -105,6 +114,7 @@ class ListDatabaseConnections extends XotBaseListRecords
                     'inactive' => 'Inactive',
                     'testing' => 'Testing',
                 ]),
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -112,6 +122,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 >>>>>>> b0c60891b (.)
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
         ];
     }
 
@@ -121,14 +133,18 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
             EditAction::make(),
             DeleteAction::make(),
             Action::make('test')
                 ->action(fn ($record) => $record->testConnection())
                 ->icon('heroicon-o-check-circle')
                 ->color('success'),
+<<<<<<< HEAD
 =======
             // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
@@ -140,6 +156,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 >>>>>>> b0c60891b (.)
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
         ];
     }
 
@@ -149,8 +167,11 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
             DeleteBulkAction::make(),
         ];
     }
@@ -160,6 +181,7 @@ class ListDatabaseConnections extends XotBaseListRecords
         return [
             CreateAction::make(),
         ];
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -187,5 +209,7 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
     }
 }

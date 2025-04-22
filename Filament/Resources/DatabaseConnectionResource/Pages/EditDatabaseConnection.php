@@ -7,6 +7,7 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
 use Filament\Pages\Actions;
@@ -19,6 +20,9 @@ use Filament\Actions;
 >>>>>>> b0c60891b (.)
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+use Filament\Pages\Actions;
+>>>>>>> 56c9860 (.)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -29,8 +33,11 @@ class EditDatabaseConnection extends EditRecord
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
     protected function getActions(): array
     {
         return [
@@ -53,6 +60,7 @@ class EditDatabaseConnection extends EditRecord
     {
         return $this->getResource()::getUrl('index');
     }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -73,4 +81,6 @@ class EditDatabaseConnection extends EditRecord
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 }

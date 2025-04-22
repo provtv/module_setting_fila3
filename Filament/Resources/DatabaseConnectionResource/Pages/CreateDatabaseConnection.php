@@ -13,8 +13,11 @@ class CreateDatabaseConnection extends CreateRecord
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 
     protected function getRedirectUrl(): string
     {
@@ -29,6 +32,7 @@ class CreateDatabaseConnection extends CreateRecord
             $connection->testConnection();
         }
     }
+<<<<<<< HEAD
 =======
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -36,4 +40,6 @@ class CreateDatabaseConnection extends CreateRecord
 >>>>>>> b0c60891b (.)
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 }

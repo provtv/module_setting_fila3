@@ -7,8 +7,11 @@ namespace Modules\Setting\Filament\Resources;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 use Filament\Forms;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -89,6 +92,7 @@ class DatabaseConnectionResource extends XotBaseResource
                     'testing' => 'Testing',
                 ])
                 ->default('inactive'),
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -124,6 +128,8 @@ class DatabaseConnectionResource extends Resource
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
         ];
     }
 

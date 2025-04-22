@@ -8,8 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -86,6 +89,7 @@ class DatabaseConnection extends Model
 
             return false;
         }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
@@ -143,5 +147,7 @@ class DatabaseConnection extends Model
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
     }
 }
