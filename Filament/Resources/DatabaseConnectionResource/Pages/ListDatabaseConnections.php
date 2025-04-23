@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
@@ -44,12 +49,44 @@ class ListDatabaseConnections extends ListRecords
             'created_at' => TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> b0c60891b (.)
+use Filament\Tables;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Tables\Table;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\Xot\Filament\Pages\XotBaseListRecords;
+
+class ListDatabaseConnections extends XotBaseListRecords
+{
+    protected static string $resource = DatabaseConnectionResource::class;
+
+    public function getTableColumns(): array
+    {
+        return [
+            TextColumn::make('name')->searchable()->sortable(),
+            TextColumn::make('driver')->searchable()->sortable(),
+            TextColumn::make('database')->searchable()->sortable(),
+<<<<<<< HEAD
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
         ];
     }
 
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
             SelectFilter::make('driver')
                 ->options([
                     'mysql' => 'MySQL',
@@ -64,24 +101,52 @@ class ListDatabaseConnections extends ListRecords
                     'inactive' => 'Inactive',
                     'testing' => 'Testing',
                 ]),
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
         ];
     }
 
     public function getTableActions(): array
     {
         return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
             EditAction::make(),
             DeleteAction::make(),
             Action::make('test')
                 ->action(fn ($record) => $record->testConnection())
                 ->icon('heroicon-o-check-circle')
                 ->color('success'),
+<<<<<<< HEAD
+=======
+=======
+            // Tables\Actions\EditAction::make(),
+            DatabaseBackupTableAction::make(),
+>>>>>>> origin/dev
+=======
+            // Tables\Actions\EditAction::make(),
+            DatabaseBackupTableAction::make(),
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
         ];
     }
 
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
             DeleteBulkAction::make(),
         ];
     }
@@ -91,5 +156,28 @@ class ListDatabaseConnections extends ListRecords
         return [
             CreateAction::make(),
         ];
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> b0c60891b (.)
+            // Tables\Actions\BulkActionGroup::make([
+            Tables\Actions\DeleteBulkAction::make(),
+            // ]),
+        ];
+    }
+
+    public function table(Table $table): Table
+    {
+        return $table
+            ->columns($this->getTableColumns())
+            ->filters($this->getTableFilters())
+            ->actions($this->getTableActions())
+            ->bulkActions($this->getTableBulkActions());
+<<<<<<< HEAD
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
     }
 }

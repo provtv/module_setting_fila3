@@ -4,7 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Pages\Actions;
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+use Filament\Pages\Actions;
+=======
+use Filament\Actions;
+>>>>>>> origin/dev
+=======
+use Filament\Actions;
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -12,6 +24,11 @@ class EditDatabaseConnection extends EditRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
     protected function getActions(): array
     {
         return [
@@ -34,4 +51,20 @@ class EditDatabaseConnection extends EditRecord
     {
         return $this->getResource()::getUrl('index');
     }
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> b0c60891b (.)
+    protected function getHeaderActions(): array
+    {
+        return [
+            Actions\DeleteAction::make(),
+        ];
+    }
+<<<<<<< HEAD
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 }

@@ -10,6 +10,11 @@ use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 class CreateDatabaseConnection extends CreateRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 
     protected function getRedirectUrl(): string
     {
@@ -24,4 +29,11 @@ class CreateDatabaseConnection extends CreateRecord
             $connection->testConnection();
         }
     }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 }

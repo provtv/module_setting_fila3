@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources;
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 use Filament\Forms;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -84,6 +89,37 @@ class DatabaseConnectionResource extends XotBaseResource
                     'testing' => 'Testing',
                 ])
                 ->default('inactive'),
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> b0c60891b (.)
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
+use Modules\Setting\Models\DatabaseConnection;
+
+class DatabaseConnectionResource extends Resource
+{
+    protected static ?string $model = DatabaseConnection::class;
+
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+            ]);
+    }
+
+    public static function getRelations(): array
+    {
+        return [
+<<<<<<< HEAD
+>>>>>>> origin/dev
+=======
+>>>>>>> b0c60891b (.)
+>>>>>>> 32e0311 (🔄 Aggiornamento subtree)
         ];
     }
 
