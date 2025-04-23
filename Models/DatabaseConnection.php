@@ -9,7 +9,12 @@ use Illuminate\Database\Eloquent\Model;
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+>>>>>>> a76ea76 (fix: auto resolve conflict)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -89,8 +94,11 @@ class DatabaseConnection extends Model
 <<<<<<< HEAD
 =======
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> b0c60891b (.)
+=======
+>>>>>>> 6d0eff2 (.)
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
@@ -135,9 +143,16 @@ class DatabaseConnection extends Model
 
         return array_values($rows);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> origin/dev
 =======
 >>>>>>> b0c60891b (.)
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
+=======
+=======
+>>>>>>> origin/dev
+>>>>>>> 6d0eff2 (.)
+>>>>>>> a76ea76 (fix: auto resolve conflict)
     }
 }
