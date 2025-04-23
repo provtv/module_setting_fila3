@@ -5,26 +5,6 @@ declare(strict_types=1);
 namespace Modules\Setting\Models;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -111,79 +91,5 @@ class DatabaseConnection extends Model
 
             return false;
         }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> b0c60891b (.)
-=======
->>>>>>> 6d0eff2 (.)
-use Illuminate\Support\Arr;
-use Sushi\Sushi;
-use Webmozart\Assert\Assert;
-
-/**
- * @property int|null    $id
- * @property string|null $name
- * @property string|null $driver
- * @property string|null $database
- *
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection query()
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDatabase($value)
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDriver($value)
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereName($value)
- *
- * @mixin \Eloquent
- */
-class DatabaseConnection extends Model
-{
-    use Sushi;
-
-    /**
-     * Model Rows.
-     */
-    public function getRows(): array
-    {
-        Assert::isArray($connections = config('database.connections'));
-
-        // $rows = array_filter($connections, fn ($item): bool => 'mysql' === $item['driver']);
-        $rows = Arr::map(
-            $connections,
-            fn (array $value, string $key): array => [
-                'id' => $key,
-                'name' => $key,
-                'driver' => $value['driver'],
-                'database' => $value['database'],
-            ]
-        );
-
-        return array_values($rows);
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
->>>>>>> b0c60891b (.)
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> origin/dev
->>>>>>> 6d0eff2 (.)
-<<<<<<< HEAD
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
     }
 }

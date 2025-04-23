@@ -4,39 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 use Filament\Pages\Actions;
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6d0eff2 (.)
-use Filament\Pages\Actions;
-=======
-use Filament\Actions;
->>>>>>> origin/dev
-<<<<<<< HEAD
-=======
-use Filament\Actions;
->>>>>>> b0c60891b (.)
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-<<<<<<< HEAD
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
-use Filament\Pages\Actions;
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
-use Filament\Pages\Actions;
->>>>>>> b13caf8 (.)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -44,26 +12,6 @@ class EditDatabaseConnection extends EditRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
     protected function getActions(): array
     {
         return [
@@ -86,41 +34,4 @@ class EditDatabaseConnection extends EditRecord
     {
         return $this->getResource()::getUrl('index');
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> b0c60891b (.)
-=======
->>>>>>> 6d0eff2 (.)
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
->>>>>>> b0c60891b (.)
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> origin/dev
->>>>>>> 6d0eff2 (.)
-<<<<<<< HEAD
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
 }

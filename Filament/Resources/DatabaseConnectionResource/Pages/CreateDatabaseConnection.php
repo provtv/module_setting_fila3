@@ -10,26 +10,6 @@ use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 class CreateDatabaseConnection extends CreateRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
 
     protected function getRedirectUrl(): string
     {
@@ -44,28 +24,4 @@ class CreateDatabaseConnection extends CreateRecord
             $connection->testConnection();
         }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> origin/dev
-<<<<<<< HEAD
-=======
->>>>>>> b0c60891b (.)
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-<<<<<<< HEAD
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
 }

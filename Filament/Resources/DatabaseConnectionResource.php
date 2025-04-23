@@ -4,26 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> 6d0eff2 (.)
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 6d0eff2 (.)
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
 use Filament\Forms;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -106,62 +86,12 @@ class DatabaseConnectionResource extends XotBaseResource
                     'testing' => 'Testing',
                 ])
                 ->default('inactive'),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
-<<<<<<< HEAD
-=======
->>>>>>> b0c60891b (.)
-=======
->>>>>>> 6d0eff2 (.)
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
-use Modules\Setting\Models\DatabaseConnection;
-
-class DatabaseConnectionResource extends Resource
-{
-    protected static ?string $model = DatabaseConnection::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
-
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-            ]);
-=======
         ];
->>>>>>> b13caf8 (.)
     }
 
     public static function getRelations(): array
     {
         return [
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> origin/dev
-=======
->>>>>>> b0c60891b (.)
-<<<<<<< HEAD
->>>>>>> 32e0311 (🔄 Aggiornamento subtree)
-=======
-=======
->>>>>>> origin/dev
->>>>>>> 6d0eff2 (.)
-<<<<<<< HEAD
->>>>>>> a76ea76 (fix: auto resolve conflict)
-=======
-=======
->>>>>>> 56c9860 (.)
->>>>>>> 720925c (fix: auto resolve conflict)
-=======
->>>>>>> b13caf8 (.)
         ];
     }
 
