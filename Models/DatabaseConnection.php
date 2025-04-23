@@ -10,11 +10,18 @@ use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -92,7 +99,10 @@ class DatabaseConnection extends Model
             return false;
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
@@ -153,6 +163,11 @@ class DatabaseConnection extends Model
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
     }
 }

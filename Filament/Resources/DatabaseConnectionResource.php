@@ -9,11 +9,18 @@ namespace Modules\Setting\Filament\Resources;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 use Filament\Forms;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -95,7 +102,10 @@ class DatabaseConnectionResource extends XotBaseResource
                 ])
                 ->default('inactive'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
@@ -134,7 +144,12 @@ class DatabaseConnectionResource extends Resource
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
         ];
     }
 

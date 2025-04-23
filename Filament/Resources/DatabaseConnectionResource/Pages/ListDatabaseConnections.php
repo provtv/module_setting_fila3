@@ -9,11 +9,18 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
@@ -55,7 +62,10 @@ class ListDatabaseConnections extends ListRecords
                 ->dateTime()
                 ->sortable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
@@ -90,7 +100,12 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
         ];
     }
 
@@ -102,11 +117,18 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
             SelectFilter::make('driver')
                 ->options([
                     'mysql' => 'MySQL',
@@ -122,7 +144,10 @@ class ListDatabaseConnections extends XotBaseListRecords
                     'testing' => 'Testing',
                 ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -133,7 +158,12 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 =======
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
         ];
     }
 
@@ -145,11 +175,18 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
             EditAction::make(),
             DeleteAction::make(),
             Action::make('test')
@@ -157,7 +194,10 @@ class ListDatabaseConnections extends XotBaseListRecords
                 ->icon('heroicon-o-check-circle')
                 ->color('success'),
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
             // Tables\Actions\EditAction::make(),
             DatabaseBackupTableAction::make(),
@@ -172,7 +212,12 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 =======
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
         ];
     }
 
@@ -184,11 +229,18 @@ class ListDatabaseConnections extends XotBaseListRecords
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
             DeleteBulkAction::make(),
         ];
     }
@@ -199,7 +251,10 @@ class ListDatabaseConnections extends XotBaseListRecords
             CreateAction::make(),
         ];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
@@ -230,6 +285,11 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
     }
 }

@@ -15,11 +15,18 @@ class CreateDatabaseConnection extends CreateRecord
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 
     protected function getRedirectUrl(): string
     {
@@ -35,7 +42,10 @@ class CreateDatabaseConnection extends CreateRecord
         }
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 >>>>>>> origin/dev
 <<<<<<< HEAD
@@ -46,5 +56,10 @@ class CreateDatabaseConnection extends CreateRecord
 =======
 =======
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 }

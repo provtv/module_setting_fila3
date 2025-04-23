@@ -10,6 +10,7 @@ use Filament\Pages\Actions;
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 6d0eff2 (.)
 use Filament\Pages\Actions;
@@ -25,7 +26,13 @@ use Filament\Actions;
 =======
 =======
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+use Filament\Pages\Actions;
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -38,11 +45,18 @@ class EditDatabaseConnection extends EditRecord
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 32e0311 (🔄 Aggiornamento subtree)
 =======
 =======
 >>>>>>> 6d0eff2 (.)
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 6d0eff2 (.)
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
     protected function getActions(): array
     {
         return [
@@ -66,7 +80,10 @@ class EditDatabaseConnection extends EditRecord
         return $this->getResource()::getUrl('index');
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 720925c (fix: auto resolve conflict)
 =======
 <<<<<<< HEAD
 =======
@@ -90,5 +107,10 @@ class EditDatabaseConnection extends EditRecord
 =======
 >>>>>>> origin/dev
 >>>>>>> 6d0eff2 (.)
+<<<<<<< HEAD
 >>>>>>> a76ea76 (fix: auto resolve conflict)
+=======
+=======
+>>>>>>> 56c9860 (.)
+>>>>>>> 720925c (fix: auto resolve conflict)
 }
