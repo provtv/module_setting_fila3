@@ -11,6 +11,7 @@ class CreateDatabaseConnection extends CreateRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -27,6 +28,8 @@ class CreateDatabaseConnection extends CreateRecord
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
 
     protected function getRedirectUrl(): string
     {
@@ -41,6 +44,7 @@ class CreateDatabaseConnection extends CreateRecord
             $connection->testConnection();
         }
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -62,4 +66,6 @@ class CreateDatabaseConnection extends CreateRecord
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
 }

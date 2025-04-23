@@ -6,6 +6,7 @@ namespace Modules\Setting\Models;
 
 use Illuminate\Database\Eloquent\Model;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,8 @@ use Illuminate\Database\Eloquent\Model;
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 
@@ -42,6 +45,16 @@ use Illuminate\Support\Facades\DB;
  * @property string $status
  * @property \Carbon\Carbon $created_at
  * @property \Carbon\Carbon $updated_at
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection query()
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDatabase($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereDriver($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|DatabaseConnection whereName($value)
+ *
+ * @mixin \Eloquent
  */
 class DatabaseConnection extends Model
 {
@@ -98,6 +111,7 @@ class DatabaseConnection extends Model
 
             return false;
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -169,5 +183,7 @@ class DatabaseConnection extends Model
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
     }
 }

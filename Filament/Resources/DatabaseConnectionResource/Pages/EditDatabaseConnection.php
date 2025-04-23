@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Filament\Pages\Actions;
 =======
 <<<<<<< HEAD
@@ -33,6 +34,9 @@ use Filament\Actions;
 use Filament\Pages\Actions;
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+use Filament\Pages\Actions;
+>>>>>>> b13caf8 (.)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -40,6 +44,7 @@ class EditDatabaseConnection extends EditRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -57,6 +62,8 @@ class EditDatabaseConnection extends EditRecord
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
     protected function getActions(): array
     {
         return [
@@ -79,6 +86,7 @@ class EditDatabaseConnection extends EditRecord
     {
         return $this->getResource()::getUrl('index');
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -113,4 +121,6 @@ class EditDatabaseConnection extends EditRecord
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
 }

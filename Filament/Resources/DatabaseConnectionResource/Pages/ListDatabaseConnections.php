@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -22,6 +23,9 @@ namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
 use Filament\Resources\Pages\ListRecords;
+=======
+use Filament\Tables;
+>>>>>>> b13caf8 (.)
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\BadgeColumn;
 use Filament\Tables\Filters\SelectFilter;
@@ -30,37 +34,44 @@ use Filament\Tables\Actions\EditAction;
 use Filament\Tables\Actions\DeleteAction;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\CreateAction;
+use Filament\Tables\Table;
+use Modules\Setting\Filament\Actions\Table\DatabaseBackupTableAction;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
-class ListDatabaseConnections extends ListRecords
+class ListDatabaseConnections extends XotBaseListRecords
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
     public function getListTableColumns(): array
     {
         return [
-            'name' => TextColumn::make('name')
+            TextColumn::make('name')
+                ->searchable()
+                ->sortable(),
+
+            TextColumn::make('driver')
+                ->searchable()
+                ->sortable(),
+
+            TextColumn::make('host')
                 ->searchable(),
 
-            'driver' => TextColumn::make('driver')
-                ->searchable(),
+            TextColumn::make('database')
+                ->searchable()
+                ->sortable(),
 
-            'host' => TextColumn::make('host')
-                ->searchable(),
-
-            'database' => TextColumn::make('database')
-                ->searchable(),
-
-            'status' => BadgeColumn::make('status')
+            BadgeColumn::make('status')
                 ->colors([
                     'danger' => 'inactive',
                     'warning' => 'testing',
                     'success' => 'active',
                 ]),
 
-            'created_at' => TextColumn::make('created_at')
+            TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable(),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -106,12 +117,15 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
         ];
     }
 
     public function getTableFilters(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -129,6 +143,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
             SelectFilter::make('driver')
                 ->options([
                     'mysql' => 'MySQL',
@@ -145,6 +161,7 @@ class ListDatabaseConnections extends XotBaseListRecords
                 ]),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 720925c (fix: auto resolve conflict)
@@ -164,12 +181,15 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
         ];
     }
 
     public function getTableActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -187,6 +207,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
             EditAction::make(),
             DeleteAction::make(),
             Action::make('test')
@@ -195,6 +217,7 @@ class ListDatabaseConnections extends XotBaseListRecords
                 ->color('success'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 720925c (fix: auto resolve conflict)
@@ -218,12 +241,16 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+            DatabaseBackupTableAction::make(),
+>>>>>>> b13caf8 (.)
         ];
     }
 
     public function getTableBulkActions(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -241,6 +268,8 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
             DeleteBulkAction::make(),
         ];
     }
@@ -250,6 +279,7 @@ class ListDatabaseConnections extends XotBaseListRecords
         return [
             CreateAction::make(),
         ];
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -265,14 +295,17 @@ class ListDatabaseConnections extends XotBaseListRecords
             Tables\Actions\DeleteBulkAction::make(),
             // ]),
         ];
+=======
+>>>>>>> b13caf8 (.)
     }
 
     public function table(Table $table): Table
     {
         return $table
-            ->columns($this->getTableColumns())
+            ->columns($this->getListTableColumns())
             ->filters($this->getTableFilters())
             ->actions($this->getTableActions())
+<<<<<<< HEAD
             ->bulkActions($this->getTableBulkActions());
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -291,5 +324,9 @@ class ListDatabaseConnections extends XotBaseListRecords
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+            ->bulkActions($this->getTableBulkActions())
+            ->headerActions($this->getTableHeaderActions());
+>>>>>>> b13caf8 (.)
     }
 }

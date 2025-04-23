@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -21,6 +22,8 @@ namespace Modules\Setting\Filament\Resources;
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
 use Filament\Forms;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -29,6 +32,8 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class DatabaseConnectionResource extends XotBaseResource
 {
     protected static ?string $model = DatabaseConnection::class;
+
+    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
     public static function getFormSchema(): array
     {
@@ -103,6 +108,7 @@ class DatabaseConnectionResource extends XotBaseResource
                 ->default('inactive'),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 720925c (fix: auto resolve conflict)
@@ -128,11 +134,15 @@ class DatabaseConnectionResource extends Resource
         return $form
             ->schema([
             ]);
+=======
+        ];
+>>>>>>> b13caf8 (.)
     }
 
     public static function getRelations(): array
     {
         return [
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> origin/dev
@@ -150,6 +160,8 @@ class DatabaseConnectionResource extends Resource
 =======
 >>>>>>> 56c9860 (.)
 >>>>>>> 720925c (fix: auto resolve conflict)
+=======
+>>>>>>> b13caf8 (.)
         ];
     }
 
