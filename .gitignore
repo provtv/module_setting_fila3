@@ -58,3 +58,6 @@ cache/
 .php-cs-fixer.cache
 node_modules/
 *:Zone.Identifier
+
+# Backup files
+*.bak
