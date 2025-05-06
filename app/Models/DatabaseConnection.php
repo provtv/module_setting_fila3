@@ -7,9 +7,38 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 
 class DatabaseConnection extends Model
 {
+=======
+use Illuminate\Support\Arr;
+use Sushi\Sushi;
+use Webmozart\Assert\Assert;
+
+/**
+ * @property string $name
+ * @property string $driver
+ * @property string $host
+ * @property int $port
+ * @property string $database
+ * @property string $username
+ * @property string $password
+ * @property string $charset
+ * @property string $collation
+ * @property string $prefix
+ * @property bool $strict
+ * @property string $engine
+ * @property array $options
+ * @property string $status
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ */
+class DatabaseConnection extends Model
+{
+    use Sushi;
+
+>>>>>>> 8c16834 (.)
     protected $fillable = [
         'name',
         'driver',
@@ -33,6 +62,35 @@ class DatabaseConnection extends Model
         'options' => 'array',
     ];
 
+<<<<<<< HEAD
+=======
+    public function getRows(): array
+    {
+        $connections = config('database.connections');
+        
+        return Arr::map(
+            $connections,
+            fn (array $value, string $key): array => [
+                'id' => $key,
+                'name' => $key,
+                'driver' => $value['driver'],
+                'database' => $value['database'],
+                'host' => $value['host'] ?? null,
+                'port' => $value['port'] ?? null,
+                'username' => $value['username'] ?? null,
+                'password' => $value['password'] ?? null,
+                'charset' => $value['charset'] ?? 'utf8mb4',
+                'collation' => $value['collation'] ?? 'utf8mb4_unicode_ci',
+                'prefix' => $value['prefix'] ?? '',
+                'strict' => $value['strict'] ?? true,
+                'engine' => $value['engine'] ?? 'InnoDB',
+                'options' => $value['options'] ?? [],
+                'status' => 'active',
+            ]
+        );
+    }
+
+>>>>>>> 8c16834 (.)
     public function testConnection(): bool
     {
         try {

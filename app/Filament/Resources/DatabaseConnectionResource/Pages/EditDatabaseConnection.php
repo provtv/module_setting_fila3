@@ -4,7 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
+<<<<<<< HEAD
 use Filament\Pages\Actions;
+=======
+use Filament\Actions;
+>>>>>>> 8c16834 (.)
 use Filament\Resources\Pages\EditRecord;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
@@ -12,7 +16,11 @@ class EditDatabaseConnection extends EditRecord
 {
     protected static string $resource = DatabaseConnectionResource::class;
 
+<<<<<<< HEAD
     protected function getActions(): array
+=======
+    protected function getHeaderActions(): array
+>>>>>>> 8c16834 (.)
     {
         return [
             Actions\DeleteAction::make(),
