@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Modules\Setting\App\Filament\Resources\DatabaseConnectionResource\Pages;
+namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 use Filament\Actions;
 use Filament\Resources\Pages\ManageRecords;
-use Modules\Setting\App\Filament\Resources\DatabaseConnectionResource;
+use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
 
 class ManageDatabaseConnections extends ManageRecords
 {
@@ -18,4 +18,4 @@ class ManageDatabaseConnections extends ManageRecords
             Actions\CreateAction::make(),
         ];
     }
-} 
+}
