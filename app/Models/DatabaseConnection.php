@@ -7,11 +7,6 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-
-class DatabaseConnection extends Model
-{
-=======
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
@@ -38,7 +33,6 @@ class DatabaseConnection extends Model
 {
     use Sushi;
 
->>>>>>> 8c16834 (.)
     protected $fillable = [
         'name',
         'driver',
@@ -62,8 +56,6 @@ class DatabaseConnection extends Model
         'options' => 'array',
     ];
 
-<<<<<<< HEAD
-=======
     public function getRows(): array
     {
         $connections = config('database.connections');
@@ -90,7 +82,6 @@ class DatabaseConnection extends Model
         );
     }
 
->>>>>>> 8c16834 (.)
     public function testConnection(): bool
     {
         try {
