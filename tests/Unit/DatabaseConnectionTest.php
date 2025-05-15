@@ -1,5 +1,5 @@
 <?php
-
+declare(strict_types=1);
 namespace Modules\Setting\Tests\Unit;
 
 use Illuminate\Support\Facades\Config;
