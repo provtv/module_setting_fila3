@@ -58,6 +58,12 @@ cache/
 .php-cs-fixer.cache
 node_modules/
 *:Zone.Identifier
+<<<<<<< HEAD
 
 # Backup files
 *.bak
+=======
+-e 
+# PHPStan documentation
+docs/phpstan/
+>>>>>>> 5016f6f (.)

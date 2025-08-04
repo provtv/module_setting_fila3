@@ -7,11 +7,19 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
 /**
+=======
+
+/**
+ * Class DatabaseConnection
+ *
+ * @property int $id
+>>>>>>> 5016f6f (.)
  * @property string $name
  * @property string $driver
  * @property string $host
@@ -19,6 +27,7 @@ use Webmozart\Assert\Assert;
  * @property string $database
  * @property string $username
  * @property string $password
+<<<<<<< HEAD
  * @property string $charset
  * @property string $collation
  * @property string $prefix
@@ -33,6 +42,23 @@ class DatabaseConnection extends Model
 {
     use Sushi;
 
+=======
+ * @property string|null $charset
+ * @property string|null $collation
+ * @property string|null $prefix
+ * @property bool $strict
+ * @property string|null $engine
+ * @property array|null $options
+ * @property string $status
+ * @property \Carbon\Carbon|null $created_at
+ * @property \Carbon\Carbon|null $updated_at
+ */
+class DatabaseConnection extends Model
+{
+    /**
+     * @var array<string>
+     */
+>>>>>>> 5016f6f (.)
     protected $fillable = [
         'name',
         'driver',
@@ -50,12 +76,19 @@ class DatabaseConnection extends Model
         'status',
     ];
 
+<<<<<<< HEAD
+=======
+    /**
+     * @var array<string, string>
+     */
+>>>>>>> 5016f6f (.)
     protected $casts = [
         'port' => 'integer',
         'strict' => 'boolean',
         'options' => 'array',
     ];
 
+<<<<<<< HEAD
     public function getRows(): array
     {
         $connections = config('database.connections');
@@ -82,6 +115,8 @@ class DatabaseConnection extends Model
         );
     }
 
+=======
+>>>>>>> 5016f6f (.)
     public function testConnection(): bool
     {
         try {

@@ -1,5 +1,9 @@
 <?php
+<<<<<<< HEAD
 declare(strict_types=1);
+=======
+
+>>>>>>> 5016f6f (.)
 $finder = PhpCsFixer\Finder::create()
     ->notPath('bootstrap/cache')
     ->notPath('storage')
