@@ -7,25 +7,14 @@ namespace Modules\Setting\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 83590b7 (.)
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
-=======
-
-/**
  * Class DatabaseConnection
  *
  * @property int $id
->>>>>>> 5016f6f (.)
-=======
->>>>>>> 83590b7 (.)
  * @property string $name
  * @property string $driver
  * @property string $host
@@ -33,26 +22,6 @@ use Webmozart\Assert\Assert;
  * @property string $database
  * @property string $username
  * @property string $password
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 83590b7 (.)
- * @property string $charset
- * @property string $collation
- * @property string $prefix
- * @property bool $strict
- * @property string $engine
- * @property array $options
- * @property string $status
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- */
-class DatabaseConnection extends Model
-{
-    use Sushi;
-
-<<<<<<< HEAD
-=======
  * @property string|null $charset
  * @property string|null $collation
  * @property string|null $prefix
@@ -65,12 +34,11 @@ class DatabaseConnection extends Model
  */
 class DatabaseConnection extends Model
 {
+    use Sushi;
+
     /**
-     * @var array<string>
+     * @var list<string>
      */
->>>>>>> 5016f6f (.)
-=======
->>>>>>> 83590b7 (.)
     protected $fillable = [
         'name',
         'driver',
@@ -88,29 +56,18 @@ class DatabaseConnection extends Model
         'status',
     ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     /**
      * @var array<string, string>
      */
->>>>>>> 5016f6f (.)
-=======
->>>>>>> 83590b7 (.)
     protected $casts = [
         'port' => 'integer',
         'strict' => 'boolean',
         'options' => 'array',
     ];
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 83590b7 (.)
     public function getRows(): array
     {
         $connections = config('database.connections');
-        
         return Arr::map(
             $connections,
             fn (array $value, string $key): array => [
@@ -133,11 +90,6 @@ class DatabaseConnection extends Model
         );
     }
 
-<<<<<<< HEAD
-=======
->>>>>>> 5016f6f (.)
-=======
->>>>>>> 83590b7 (.)
     public function testConnection(): bool
     {
         try {
@@ -165,7 +117,6 @@ class DatabaseConnection extends Model
             return true;
         } catch (\Exception $e) {
             report($e);
-
             return false;
         }
     }

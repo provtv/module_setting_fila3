@@ -9,10 +9,6 @@ use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
 /**
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 83590b7 (.)
  * @property int                                                                                                        $id
  * @property string                                                                                                     $group
  * @property string                                                                                                     $name
@@ -34,8 +30,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereUpdatedAt($value)
-<<<<<<< HEAD
-=======
  * @property int $id
  * @property string $group
  * @property string $name
@@ -57,7 +51,6 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting whereUpdatedAt($value)
->>>>>>> 5016f6f (.)
 =======
 >>>>>>> 83590b7 (.)
  *

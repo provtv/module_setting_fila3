@@ -33,15 +33,7 @@ class BackupMysql extends Page
     {
         Assert::isArray($connections = config('database.connections'));
 
-<<<<<<< HEAD
-<<<<<<< HEAD
         $connections = array_filter($connections, fn ($item): bool => 'mysql' === $item['driver']);
-=======
-        $connections = array_filter($connections, fn ($item): bool => $item['driver'] === 'mysql');
->>>>>>> 5016f6f (.)
-=======
-        $connections = array_filter($connections, fn ($item): bool => 'mysql' === $item['driver']);
->>>>>>> 83590b7 (.)
 
         // $connections=collect($connections)->keyBy('database');
         return ['connections' => $connections];

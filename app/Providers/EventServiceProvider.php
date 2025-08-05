@@ -22,13 +22,7 @@ class EventServiceProvider extends BaseEventServiceProvider
      * @var array<string, array<int, string>>
      */
     protected $listen = [];
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 5016f6f (.)
-=======
->>>>>>> 83590b7 (.)
     /**
      * Indicates if events should be discovered.
      *
