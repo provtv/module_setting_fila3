@@ -5,6 +5,9 @@ declare(strict_types=1);
 namespace Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83590b7 (.)
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
 use Filament\Tables;
@@ -79,6 +82,7 @@ class ListDatabaseConnections extends ListRecords
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
             ]);
+<<<<<<< HEAD
 =======
 use Filament\Tables;
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource;
@@ -155,5 +159,7 @@ class ListDatabaseConnections extends XotBaseListRecords
             'create' => Tables\Actions\CreateAction::make(),
         ];
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     }
 }

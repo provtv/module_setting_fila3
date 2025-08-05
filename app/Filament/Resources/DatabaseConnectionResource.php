@@ -6,6 +6,9 @@ namespace Modules\Setting\Filament\Resources;
 
 use Filament\Forms;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83590b7 (.)
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -130,6 +133,7 @@ class DatabaseConnectionResource extends Resource
     {
         return [
             //
+<<<<<<< HEAD
 =======
 use Modules\Setting\Filament\Resources\DatabaseConnectionResource\Pages;
 use Modules\Setting\Models\DatabaseConnection;
@@ -211,6 +215,8 @@ class DatabaseConnectionResource extends XotBaseResource
                 ])
                 ->default('inactive'),
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
         ];
     }
 
@@ -220,9 +226,13 @@ class DatabaseConnectionResource extends XotBaseResource
             'index' => Pages\ListDatabaseConnections::route('/'),
             'create' => Pages\CreateDatabaseConnection::route('/create'),
 <<<<<<< HEAD
+<<<<<<< HEAD
             'view' => Pages\ViewDatabaseConnection::route('/{record}'),
 =======
 >>>>>>> 5016f6f (.)
+=======
+            'view' => Pages\ViewDatabaseConnection::route('/{record}'),
+>>>>>>> 83590b7 (.)
             'edit' => Pages\EditDatabaseConnection::route('/{record}/edit'),
         ];
     }

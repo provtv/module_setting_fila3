@@ -23,9 +23,12 @@ class EventServiceProvider extends BaseEventServiceProvider
      */
     protected $listen = [];
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     /**
      * Indicates if events should be discovered.
      *

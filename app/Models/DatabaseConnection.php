@@ -8,11 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83590b7 (.)
 use Illuminate\Support\Arr;
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
 /**
+<<<<<<< HEAD
 =======
 
 /**
@@ -20,6 +24,8 @@ use Webmozart\Assert\Assert;
  *
  * @property int $id
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
  * @property string $name
  * @property string $driver
  * @property string $host
@@ -28,6 +34,9 @@ use Webmozart\Assert\Assert;
  * @property string $username
  * @property string $password
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83590b7 (.)
  * @property string $charset
  * @property string $collation
  * @property string $prefix
@@ -42,6 +51,7 @@ class DatabaseConnection extends Model
 {
     use Sushi;
 
+<<<<<<< HEAD
 =======
  * @property string|null $charset
  * @property string|null $collation
@@ -59,6 +69,8 @@ class DatabaseConnection extends Model
      * @var array<string>
      */
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     protected $fillable = [
         'name',
         'driver',
@@ -77,11 +89,14 @@ class DatabaseConnection extends Model
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     /**
      * @var array<string, string>
      */
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     protected $casts = [
         'port' => 'integer',
         'strict' => 'boolean',
@@ -89,6 +104,9 @@ class DatabaseConnection extends Model
     ];
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 83590b7 (.)
     public function getRows(): array
     {
         $connections = config('database.connections');
@@ -115,8 +133,11 @@ class DatabaseConnection extends Model
         );
     }
 
+<<<<<<< HEAD
 =======
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     public function testConnection(): bool
     {
         try {

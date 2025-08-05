@@ -14,8 +14,11 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> 5016f6f (.)
+=======
+>>>>>>> 83590b7 (.)
     public string $name = 'Setting';
 }

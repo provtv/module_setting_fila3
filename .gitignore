@@ -59,6 +59,7 @@ cache/
 node_modules/
 *:Zone.Identifier
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 # Backup files
 *.bak
@@ -67,3 +68,8 @@ node_modules/
 # PHPStan documentation
 docs/phpstan/
 >>>>>>> 5016f6f (.)
+=======
+
+# Backup files
+*.bak
+>>>>>>> 83590b7 (.)
