@@ -30,6 +30,7 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereName($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      wherePayload($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Setting      whereUpdatedAt($value)
+<<<<<<< HEAD
  * @property int $id
  * @property string $group
  * @property string $name
@@ -53,6 +54,8 @@ use Spatie\MediaLibrary\InteractsWithMedia;
  * @method static \Illuminate\Database\Eloquent\Builder|Setting whereUpdatedAt($value)
 =======
 >>>>>>> 83590b7 (.)
+=======
+>>>>>>> a3c0b85 (.)
  *
  * @property \Modules\Xot\Contracts\ProfileContract|null $creator
  * @property \Modules\Xot\Contracts\ProfileContract|null $updater
