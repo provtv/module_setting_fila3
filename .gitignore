@@ -1,74 +1,59 @@
-/vendor
-*.lock
-/build
-*.lock
-*.lock
-*.lock
-package-lock.json
+
+# Dependencies and packages
 /vendor/
 node_modules/
 npm-debug.log
+package-lock.json
+vendor/
 yarn-error.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
-.env
-Homestead.yaml
-Homestead.json
-/.vagrant
-.phpunit.result.cache
+# Build and compiled files
 *.cache
+*.lock
+*.phar
+.php-cs-fixer.cache
+.phpunit.result.cache
+/build
+build/
+
+# Laravel specific
+.env
+app/storage/
+bootstrap/compiled.php
+public/hot
+public/storage
+public_html/hot
+public_html/storage
+
+# Local configurations
+/.vagrant
+Homestead.json
+Homestead.yaml
+
+# Git specific
 .git-blame-ignore-revs
 .git-rewrite
-
-.git-blame-ignore-revs
-*.phar
-.php-cs-fixer.cache
-*.phar
-*.cache
-.git-blame-ignore-revs
-package-lock.json
-.php-cs-fixer.cache
-package-lock.json
 .git-rewrite/
-.php-cs-fixer.cache
-node_modules
-.git-blame-ignore-revs
-.git-blame-ignore-revs
-node_modules
-vendor
-build/
-vendor/
-build/
-node_modules
-docs/cache/
-cache/
-.git-blame-ignore-revs
-.php-cs-fixer.cache
-node_modules/
+
+# Temporary and system files
 *:Zone.Identifier
 
 # Backup files
-*.bak
-# PHPStan documentation
-docs/phpstan/
-<<<<<<< HEAD
-=======
-
-# Backup files
-*.old
-*.old1
 *.backup
 *.backup.*
->>>>>>> 712790c (.)
+*.bak
+*.old
+*.old1
+
+# Documentation and cache
+cache/
+docs/cache/
+docs/phpstan/
+
+# Other
+/vendor
+storage/*.key
+node_modules
+node_modules
+vendor
+node_modules

@@ -58,10 +58,6 @@ class DatabaseConnection extends Model
 
     public function getRows(): array
     {
-<<<<<<< HEAD
-        $connections = config('database.connections');
-        
-=======
         /** @var array<string, mixed>|mixed $connections */
         $connections = config('database.connections');
         
@@ -69,7 +65,6 @@ class DatabaseConnection extends Model
             return [];
         }
         
->>>>>>> 712790c (.)
         return Arr::map(
             $connections,
             fn (array $value, string $key): array => [
