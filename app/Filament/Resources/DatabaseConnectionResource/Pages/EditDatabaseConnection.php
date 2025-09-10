@@ -17,7 +17,15 @@ class EditDatabaseConnection extends EditRecord
         return [
             Actions\DeleteAction::make(),
             Actions\Action::make('test')
+<<<<<<< HEAD
                 ->action(fn () => $this->record->testConnection())
+=======
+                ->action(function () {
+                    /** @var \Modules\Setting\Models\DatabaseConnection|null $record */
+                    $record = $this->record;
+                    $record?->testConnection();
+                })
+>>>>>>> 712790c (.)
                 ->icon('heroicon-o-check-circle')
                 ->color('success'),
         ];
@@ -25,8 +33,16 @@ class EditDatabaseConnection extends EditRecord
 
     protected function afterSave(): void
     {
+<<<<<<< HEAD
         if ('active' === $this->record->status) {
             $this->record->testConnection();
+=======
+        /** @var \Modules\Setting\Models\DatabaseConnection|null $record */
+        $record = $this->record;
+        
+        if ($record && 'active' === $record->status) {
+            $record->testConnection();
+>>>>>>> 712790c (.)
         }
     }
 

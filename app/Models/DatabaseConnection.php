@@ -58,8 +58,18 @@ class DatabaseConnection extends Model
 
     public function getRows(): array
     {
+<<<<<<< HEAD
         $connections = config('database.connections');
         
+=======
+        /** @var array<string, mixed>|mixed $connections */
+        $connections = config('database.connections');
+        
+        if (!is_array($connections)) {
+            return [];
+        }
+        
+>>>>>>> 712790c (.)
         return Arr::map(
             $connections,
             fn (array $value, string $key): array => [
