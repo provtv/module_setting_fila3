@@ -1,4 +1,4 @@
-@extends('setting::layouts.master')
+nds('setting::layouts.master')
 
 @section('content')
     <h1>Hello World</h1>
